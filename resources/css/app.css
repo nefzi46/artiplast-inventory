@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Color Palette Override */
+/* 
+ * #ECF4E8 - Light mint (backgrounds, light elements)
+ * #CBF3BB - Light green (secondary/tertiary elements)
+ * #ABE7B2 - Medium green (secondary elements)
+ * #93BFC7 - Teal blue (primary elements, accents)
+ */
+
+@layer base {
+  :root {
+    --color-primary: #93BFC7;
+    --color-primary-rgb: 147, 191, 199;
+    --color-secondary: #ABE7B2;
+    --color-secondary-rgb: 171, 231, 178;
+    --color-tertiary: #CBF3BB;
+    --color-tertiary-rgb: 203, 243, 187;
+    --color-light: #ECF4E8;
+    --color-light-rgb: 236, 244, 232;
+    --color-dark: #2c5f6f;
+    --color-dark-rgb: 44, 95, 111;
+  }
+
+  body {
+    background-color: #ECF4E8;
+    color: #000000;
+  }
+}
+
+@layer components {
+  /* Primary buttons and elements */
+  .bg-primary,
+  .btn-primary,
+  [class*="bg-blue"] {
+    background-color: #93BFC7 !important;
+    border-color: #93BFC7 !important;
+  }
+
+  /* Secondary buttons and elements */
+  .bg-secondary,
+  .btn-secondary,
+  [class*="bg-purple"],
+  [class*="bg-indigo"] {
+    background-color: #ABE7B2 !important;
+    border-color: #ABE7B2 !important;
+  }
+
+  /* Light backgrounds */
+  .bg-light,
+  .bg-white,
+  [class*="bg-gray-1"] {
+    background-color: #ECF4E8 !important;
+  }
+
+  /* Text colors */
+  .text-primary,
+  [class*="text-blue"] {
+    color: #93BFC7 !important;
+  }
+
+  .text-secondary,
+  [class*="text-purple"],
+  [class*="text-indigo"] {
+    color: #ABE7B2 !important;
+  }
+
+  .text-dark,
+  [class*="text-gray-8"],
+  [class*="text-gray-9"] {
+    color: #000000 !important;
+  }
+
+  /* Border colors */
+  .border-primary {
+    border-color: #93BFC7 !important;
+  }
+
+  .border-secondary {
+    border-color: #ABE7B2 !important;
+  }
+
+  /* Hover states */
+  .btn-primary:hover,
+  .bg-primary:hover {
+    background-color: #7aa5ae !important;
+    border-color: #7aa5ae !important;
+  }
+
+  .btn-secondary:hover,
+  .bg-secondary:hover {
+    background-color: #95d99f !important;
+    border-color: #95d99f !important;
+  }
+}
