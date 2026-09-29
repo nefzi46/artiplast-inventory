@@ -29,3 +29,5 @@ scannerwork/
 .scannerwork/
 sonar.sh
 sonar-project.properties
+sonarqube-backup.sql
+*.sql

@@ -1,4 +1,4 @@
-# Inventryx - Inventory Management System
+# Artiplast inventory - Inventory Management System
 
 A powerful and comprehensive inventory management system built with Laravel 11, designed to streamline product tracking, warehouse operations, and supply chain management. Inventryx provides businesses with real-time inventory visibility, role-based access control, and seamless third-party API integrations.
 
