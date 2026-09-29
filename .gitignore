@@ -23,3 +23,9 @@ Homestead.json
 Homestead.yaml
 Thumbs.db
 sonar.sh
+
+# SonarQube
+scannerwork/
+.scannerwork/
+sonar.sh
+sonar-project.properties
